@@ -127,3 +127,14 @@ Wed, Apr 16, 2025  9:51:41 AM:
  tests:  8|3
 total_score: 40/70
 fd08998
+Wed, Apr 16, 2025  9:56:38 AM: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:85:18: error: implicit declaration of function 'has' [-Werror=implicit-function-declaration]
+     long index = has(key, map-> capacity);
+                  ^~~
+cc1.exe: all warnings being treated as errors
+dbdbfea

@@ -2,3 +2,14 @@ Wed, Apr 16, 2025  8:43:27 AM:
  tests:  0|6
 total_score: 0/70
 eeef3b7
+Wed, Apr 16, 2025  8:44:00 AM: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:60:18: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     map->buckets = (void**)calloc(capacity,sizeof(void*));
+                  ^
+cc1.exe: all warnings being treated as errors
+9d7dd2d

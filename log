@@ -106,3 +106,12 @@ hashmap.c:90:10: error: unused variable 'orgIndex' [-Werror=unused-variable]
           ^~~~~~~~
 cc1.exe: all warnings being treated as errors
 dfdd534
+Wed, Apr 16, 2025  9:50:47 AM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:90:10: error: unused variable 'orgIndex' [-Werror=unused-variable]
+     long orgIndex = index;
+          ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+5a99938

@@ -42,7 +42,7 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value) {
     if(searchMap(map, key) !=NULL) return;
     long index = hash(key, map->capacity);
-    long orgIndex = index;
+    //long orgIndex = index;
     while(map->buckets[index] !=NULL && map->buckets[index]->key != NULL){
             index = (index + 1) & map-> capacity;
         }
@@ -54,7 +54,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         map->buckets[index]->key = strdup(key);
         map->buckets[index]->value = value;
     }
-    
+
 }
 
 void enlarge(HashMap * map) {

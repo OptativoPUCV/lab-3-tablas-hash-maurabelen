@@ -187,3 +187,9 @@ hashmap.c:86:33: error: subscripted value is neither array nor pointer nor vecto
          Pair *pair = old_buckets[index];
                                  ^
 1c207db
+Wed, Apr 16, 2025 10:35:04 AM: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  17|0
+total_score: 70/70
+3534105

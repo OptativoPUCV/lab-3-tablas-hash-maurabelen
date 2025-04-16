@@ -63,14 +63,14 @@ void enlarge(HashMap * map) {
     if(map == NULL) return;
 
     //guardar arreglo antiguo
-    Pair old_buckets = map ->buckets;
+    Pair **old_buckets = map ->buckets;
     long old_capacity = map->capacity;
 
     //duplicamos capacidad 
     map->capacity *= 2;
 
     //creamos nuevo arreglo de buckets
-    map->buckets = (Pair)calloc(map->capacity, sizeof(Pair*));
+    map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*));
     if(map->buckets == NULL){
         map->buckets = old_buckets;
         map->capacity = old_capacity;

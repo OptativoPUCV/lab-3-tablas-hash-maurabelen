@@ -46,3 +46,9 @@ hashmap.c:63:5: error: expected ';' before 'map'
      map->capacity = capacity;
      ^~~
 ac0af76
+Wed, Apr 16, 2025  9:00:28 AM: 
+ hashmap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ tests:  1|5
+total_score: 10/70
+717edf9

@@ -168,3 +168,22 @@ Wed, Apr 16, 2025 10:08:40 AM:
  tests:  16|1
 total_score: 60/70
 94db1b8
+Wed, Apr 16, 2025 10:25:28 AM: 
+ hashmap.c | 29 ++++++++++++++++++++++++++++-
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:66:24: error: invalid initializer
+     Pair old_buckets = map ->buckets;
+                        ^~~
+hashmap.c:73:5: error: conversion to non-scalar type requested
+     map->buckets = (Pair)calloc(map->capacity, sizeof(Pair*));
+     ^~~
+hashmap.c:75:22: error: incompatible types when assigning to type 'Pair ** {aka struct Pair **}' from type 'Pair {aka struct Pair}'
+         map->buckets = old_buckets;
+                      ^
+hashmap.c:86:33: error: subscripted value is neither array nor pointer nor vector
+         Pair *pair = old_buckets[index];
+                                 ^
+1c207db

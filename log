@@ -138,3 +138,9 @@ hashmap.c:85:18: error: implicit declaration of function 'has' [-Werror=implicit
                   ^~~
 cc1.exe: all warnings being treated as errors
 dbdbfea
+Wed, Apr 16, 2025  9:56:51 AM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 50/70
+1f9926e

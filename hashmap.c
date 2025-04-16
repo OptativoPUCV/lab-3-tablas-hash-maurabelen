@@ -133,6 +133,15 @@ while(index < map->capacity){
 }
 
 Pair * nextMap(HashMap * map) {
-
+    if(map == NULL) return NULL;
+    long index = map->current + 1;
+    while(index < map->capacity){
+        Pair * pair= map->buckets[index];
+        if(pair != NULL && pair->key != NULL){
+            map->current = index;
+            return pair;
+        }
+        index++;
+    }
     return NULL;
 }

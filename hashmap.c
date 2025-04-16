@@ -59,7 +59,7 @@ HashMap * createMap(long capacity) {
     map->capacity = capacity;
     map->size = 0;
 
-    map->buckets = (void**)calloc(capacity,sizeof(void*));
+    map->buckets = calloc(capacity,sizeof(Pair*));
     if(map->buckets == NULL){
         free(map);
         return NULL;

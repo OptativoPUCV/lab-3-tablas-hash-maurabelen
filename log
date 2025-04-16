@@ -36,3 +36,13 @@ Wed, Apr 16, 2025  8:55:03 AM:
  tests:  0|6
 total_score: 0/70
 91942dd
+Wed, Apr 16, 2025  9:00:08 AM: 
+ hashmap.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:63:5: error: expected ';' before 'map'
+     map->capacity = capacity;
+     ^~~
+ac0af76

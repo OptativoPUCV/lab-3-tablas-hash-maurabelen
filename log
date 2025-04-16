@@ -63,3 +63,14 @@ hashmap.c:47:22: error: initialization from incompatible pointer type [-Werror=i
                       ^~~
 cc1.exe: all warnings being treated as errors
 65f03b8
+Wed, Apr 16, 2025  9:32:17 AM: 
+ hashmap.c | 28 +++++++++++-----------------
+ 1 file changed, 11 insertions(+), 17 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:45:10: error: unused variable 'orgIndex' [-Werror=unused-variable]
+     long orgIndex = index;
+          ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+8af9fe0

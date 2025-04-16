@@ -44,7 +44,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     long index = hash(key, map->capacity);
     //long orgIndex = index;
     while(map->buckets[index] !=NULL && map->buckets[index]->key != NULL){
-            index = (index + 1) & map-> capacity;
+            index = (index + 1) % map-> capacity;
         }
 
     if(map->buckets[index] ==NULL){
@@ -53,8 +53,9 @@ void insertMap(HashMap * map, char * key, void * value) {
     else{
         map->buckets[index]->key = strdup(key);
         map->buckets[index]->value = value;
+         
     }
-
+    map->size++;
 }
 
 void enlarge(HashMap * map) {

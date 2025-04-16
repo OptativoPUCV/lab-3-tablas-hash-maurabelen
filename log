@@ -52,3 +52,14 @@ Wed, Apr 16, 2025  9:00:28 AM:
  tests:  1|5
 total_score: 10/70
 717edf9
+Wed, Apr 16, 2025  9:13:05 AM: 
+ hashmap.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:47:22: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+         Pair *pair = map ->buckets;
+                      ^~~
+cc1.exe: all warnings being treated as errors
+65f03b8
